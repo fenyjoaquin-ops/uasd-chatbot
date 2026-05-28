@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* CHAT */
+.container {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatBox {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.msg {
+  max-width: 60%;
+  padding: 10px 15px;
+  border-radius: 12px;
+  color: white;
+}
+
+.user {
+  align-self: flex-end;
+  background: #3b82f6;
+}
+
+.bot {
+  align-self: flex-start;
+  background: #1e293b;
+}
+
+/* INPUT */
+.inputBox {
+  display: flex;
+  padding: 10px;
+  background: #111827;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  background: #3b82f6;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* SUGERENCIAS */
+.sugerencias {
+  flex: 1;
+  background: #0b1220;
+  padding: 15px;
+  color: white;
+  border-left: 1px solid #1e293b;
+}
+
+.sug {
+  background: #1e293b;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sug:hover {
+  background: #334155;
+}
